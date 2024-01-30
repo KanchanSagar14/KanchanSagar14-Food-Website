@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang ="en" dir="ltr">
+<head>
+<meta charset ="utf-8">
+</head>
+<title> FOOD WEBSITE </title>
+<body>
+<style>
+h1{
+text-align: center;
+font-family: courier;
+color: purple;
+}
+
+
+body{
+background-image: linear-gradient(to left, #ed4264 , #ffedbc
+ );
+height:700px;
+
+border:10px solid ;
+}
+p{
+
+font-size: 40px;font-family:Brush Script MT;
+color:#ca1cca;
+}
+
+
+.title1 {
+
+   font-size:45px;
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.card { 
+box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.2); 
+transition:0.3s; 
+padding: 16px; 
+text-align: center; 
+background-color: #ffcc66; 
+width:80%;
+;
+
+} 
+.card:hover{ 
+
+box-shadow:20px 20px 20px 20px rgba(0, 0, 0, 0.2); 
+} 
+
+</style>
+
+<div class="title1"><b>PICANHA,BRAZIL</b></div>
+<br> <br> <br>
+<center><div class="card">
+<p> Barbecued meat is a Brazilian speciality. Picanha (rump) is the most popular cut and it is seasoned with only salt before it's cooked to perfection. </p><br>
+<img src ="">image
+</br><p>The thick layer of fat is charred and the tender, pink, smokey middle falls apart in your mouth. Picanha is one of the highlights you'll find at a Brazilian barbecue but there plenty of others including wild boar and chicken hearts.</p>
+</div></center>
+</body>
+</html>

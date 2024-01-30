@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang ="en" dir="ltr">
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta name="viewport" content="width=device-width, initial-scale =1">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 3000px;
+  padding: 10px;
+  background-color: yellow;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 10;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: red;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: red;
+  color: white;
+  padding: 40px 60px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:50px;
+  opacity: 4;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}*/
+
+.column {
+  float: left;
+  width: 50%;
+  padding:  50px;
+ 
+}
+
+.row {margin: 0 5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.2);
+  transition:0.3s;
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  
+  
+}
+.card:hover{
+
+box-shadow:18px 18px 18px 18px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+font-size:27px;
+color:#404040;}
+
+.column p{
+color:#e69500;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+.row{
+
+background-color:#e6e6e6;
+}
+
+
+.food1{
+float:left;}
+
+.food2{
+float:right;
+padding:180px ;
+
+padding: 80px 80px;
+margin-right: 90px;
+margin-top: 100px;
+
+}
+
+ @keyframes bounce {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                transform: translate3d(0, -200px, 0);
+            }
+}.food2 {
+            
+            animation: bounce 0.5s;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+            animation-iteration-count: infinite;
+        }
+          
+
+ td{
+height:70px;}
+
+
+.container {
+  position: relative;
+  
+}
+.food {
+  position: absolute;
+  bottom: 140px;
+  left: 90px;
+}
+
+</style>
+</head>
+<body>
+<style>
+h1{
+text-align: left;
+padding-top:70px;
+font-family: courier;
+font-size:50px;
+
+}
+</style>
+<div style="border:15px solid #e69500";>
+<div class="container">
+  <img src="images/food1.jpg" alt="Snow" style="width:100%;opacity:0.5;"></div>
+<div class="food">
+
+<div class="food1" >
+
+<h1> TOP 10 FOOD AROUND THE WORLD </h1>
+
+<br><br><br>
+ <p style="width:780px;font-family:Brush Script MT; font-size:30px;">"There is no love sincerer than the love of food," George Bernard Shaw said. Judging by the number of amazing dishes out there, he was right. But which are the tastiest? Which are the best foods? And what are the destinations that serve them? We've scoured the planet for what we think are 50 of the most delicious foods ever created. For now, feast your eyes and control your drooling, as we reveal some of the world's best foods that can help inspire your travel plans:</p>
+ <img class="image"src="images/restaurant-bg.jpg" >
+ <style type="text/css">
+   .image{
+  width: 450px;
+  height: 300px;
+  margin: 15px;
+  transition: all 1s;
+  box-shadow: 6px 6px 7px ;
+
+}
+img:hover{
+  transform: scale(1.1);
+}
+
+
+ </style>
+
+</div>
+
+
+
+</div>
+<div style="margin-top:-95px;">
+<tr>
+<table border ="1" width="100%">
+</tr>
+<td align ="center">
+<span style="font-size:35px; color: #e69500;">ASIA:</span>
+<select onchange ="la(this.value)">
+<option disabled selected> choose </option>
+<option value ="India.html"><a href="India.html"></a> India </option>
+<option value ="Indonesia.html"> Indonesia </option>
+<option value ="Vietnam.html"> Vietnam </option>
+<option value ="Iran.html"> Iran </option>
+<option value ="South Korea.html"> South Korea </option>
+</select>
+<script>
+function la(src)
+{
+window.location=src;
+}
+</script>
+</td>
+<br>
+<td align ="center">
+<span style="font-size:35px; color: #e69500;">EUROPE:</span>
+<select onchange ="la(this.value)">
+<option disabled selected> choose </option>
+<option value ="France.html"><a href="France.html"></a> France </option>
+<option value ="Spain.html"> Spain </option>
+<option value ="Georgia.html"> Georgia </option>
+<option value ="Belgium.html"> Belgium </option>
+<option value ="Croatia.html"> Croatia </option>
+</select>
+<script>
+function la(src)
+{
+window.location=src;
+}
+</script>
+</td>
+<br>
+<td align ="center">
+<span style="font-size:35px; color: #e69500;">AFRICA:</span>
+<select onchange ="la(this.value)">
+<option disabled selected> choose </option>
+<option value ="Ethiopia.html"> Ethiopia </option>
+<option value ="Kenya.html"> Kenya </option>
+<option value ="Senegal.html"> Senegal </option>
+<option value ="Tanzania.html"> Tanzania </option>
+<option value ="Morocco.html"><a href="Morocco.html"></a> Morocco </option>
+</select>
+<script>
+function la(src)
+{
+window.location=src;
+}
+</script>
+</td>
+<br>
+<td align ="center">
+<span style="font-size:35px; color: #e69500;">NORTH AMERICA:</span>
+<select onchange ="la(this.value)">
+<option disabled selected> choose </option>
+<option value ="Mexico.html"><a href="Mexico.html"></a> Mexico </option>
+<option value ="Canada.html"> Canada </option>
+<option value ="Cuba.html"> Cuba </option>
+<option value ="United States.html"> United States </option>
+<option value ="Jamacia.html"> Jamacia </option>
+</select>
+<script>
+function la(src)
+{
+window.location=src;
+}
+</script>
+</td>
+<br>
+<td align ="center">
+<span style="font-size:35px; color: #e69500;">SOUTH AMERICA:</span>
+<select onchange ="la(this.value)">
+<option disabled selected> choose </option>
+<option value ="Brazil.html"><a href="Brazil.html"></a> Brazil </option>
+<option value ="Columbia.html">Columbia </option>
+<option value ="Argentina.html"> Argentina </option>
+<option value ="Peru.html"> Peru </option>
+<option value ="Chile.html"> Chile </option>
+</select>
+<script>
+function la(src)
+{
+window.location=src;
+}
+</script>
+</td>
+<br>
+<td align ="center">
+<span style="font-size:35px; color: #e69500;">AUSTRALIA:</span>
+<select onchange ="la(this.value)">
+<option disabled selected> choose </option>
+<option value ="Australia.html"><a href="Australia.html"></a> Australia </option>
+</select>
+<script>
+function la(src)
+{
+window.location=src;
+}
+</script>
+</td>
+</div>
+<br>
+<td align ="center">
+<tr>
+<table border ="1" width="100%">
+</tr>
+
+
+
+
+<div class="row">
+ <div class="column">
+  <div class="card">
+
+<h3> Massaman curry, Thailand </h3>
+<a href="https://www.recipetineats.com/massaman-curry/">
+<img src="images/massamancurry.jpg" alt="massaman curry" class="image2"></a> 
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>Emphatically the king of curries, and perhaps the king of all foods. Spicy, coconutty, sweet and savory. Even the packet sauce you buy from the supermarket can make the most delinquent of cooks look like a Michelin potential. Thankfully, someone invented rice, with which diners can mop up the last drizzles of curry sauce. "The Land of Smiles" isn't just a marketing catch-line. It's a result of being born in a land where the world's most delicious food is sold on nearly every street corner.</p>
+ </div>
+ <style type="text/css">
+   .image2{
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+    height: 200px;
+    margin: 15px;
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+ </style>
+</div>
+
+<div class="column">
+ <div class="card">
+<h3> Neapolitan pizza, Italy </h3>
+<a href="https://www.manopasto.com/en/neapolitan-pizza-recipes/">
+<img src="images/pizza.jpg" alt="Neapolitan pizza" class="image2"></a>
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>Spare us the lumpy chain monstrosities and "everything-on-it" wheels of greed. The best pizza was and still is the simple Neapolitan, an invention now protected by its own trade association that insists on sea salt, high-grade wheat flour, the use of only three types of fresh tomatoes, hand-rolled dough and the strict use of a wood-fired oven, among other quality stipulations. With just a few ingredients -- dough, tomatoes, olive oil, salt and basil (the marinara pizza does not even contain cheese) -- the Neapolitans created a food that few make properly, but everyone enjoys thoroughly.</p>
+</div>
+ </div>
+
+<div class="column">
+ <div class="card">
+<h3> Chocolate, Mexico </h3>
+<a href="https://recipes.timesofindia.com/recipes/homemade-chocolate/rs54407737.cms">
+<img src="images/chocolate.jpg" alt="chocolate" class="image2"> </a>
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>The Mayans drank it, Lasse Hallstr�m made a film about it and the rest of us get over the guilt of eating too much of it by eating more of it. The story of the humble cacao bean is a bona fide out-of-the-jungle, into-civilization tale of culinary wonder. Without this creamy, bitter-sweet confection, Valentine's Day would be all cards and flowers, Easter would turn back into another dull religious event.</p>
+ </div>
+</div>
+
+<div class="column">
+ <div class="card">
+<h3>Sushi, Japan, Thailand </h3>
+<a href="https://healthywaymag.com/recipes/how-to-make-sushi">
+<img src="images/sushi.jpg" alt="sushi" class="image2"> </a>
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>When Japan wants to build something right, it builds it really right. Brand giants such as Toyota, Nintendo, Sony, Nikon and Yamaha may have been created by people fueled by nothing more complicated than raw fish and rice, but it's how the fish and rice is put together that makes this a global first-date favorite. The Japanese don't live practically forever for no reason -- they want to keep eating this stuff.</p>
+  </div>
+ </div>
+
+<div class="column">
+<div class="card">
+<h3> Peking duck, China </h3>
+<a href="https://www.bbcgoodfood.com/recipes/peking-duck">
+<img src="images/peking-duck.jpg" alt="peking-duck" class="image2"> </a>
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>The maltose-syrup glaze coating the skin is the secret. Slow roasted in an oven, the crispy, syrup-coated skin is so good that authentic eateries will serve more skin than meat, and bring it with pancakes, onions and hoisin or sweet bean sauce. Other than flying or floating, this is the only way you want your duck.</p>
+ </div>
+</div>
+
+<div class="column">
+ <div class="card">
+<h3> Hamburger, Germany </h3>
+<a href="https://yummynotes.net/hamburger-recipes/">
+<img src="images/hamburger.jpg" alt="Hamburger" class="image2"> </a>
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>When something tastes so good that people spend $20 billion each year in a single restaurant chain devoted to it, you know it has to fit into this list. McDonald's may not offer the best burgers, but that's the point -- it doesn't have to. The bread-meat-salad combination is so good that entire countries have ravaged their eco-systems just to produce more cows.</p>
+ </div>
+</div>
+
+<div class="column">
+   <div   class="card">
+<h3> Penang assam laksa, Malaysia </h3>
+<a href="https://penangfoodie.com/asam-laksa-recipe/">
+<img src="images/Penang assam laksa.jpg" alt="Penang assam laksa" class="image2"></a>
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>Poached, flaked mackerel, tamarind, chili, mint, lemongrass, onion, pineapple ... one of Malaysia's most popular dishes is an addictive spicy-sour fish broth with noodles (especially great when fused with ginger), that'll have your nose running before the spoon even hits your lips.</p>
+ </div>
+</div>
+
+<div class="column">
+ <div class="card">
+  <a href="https://www.tastythais.com/easy-tom-yum-goong-nam-kon/">
+<h3> Tom yum goong, Thailand </h3>
+<img src="images/tom-yum-goong.jpg" alt="tom-yum-goong" class="image2"> </a>
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>This best food Thai masterpiece teems with shrimp, mushrooms, tomatoes, lemongrass, galangal and kaffir lime leaves. Usually loaded with coconut milk and cream, the hearty soup unifies a host of favorite Thai tastes: sour, salty, spicy and sweet. Best of all is the price: cheap.</p>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<h3> Ice cream, Global </h3>
+<a href="https://www.allrecipes.com/recipes/1556/desserts/frozen-desserts/ice-cream/">
+<img src="images/ice-cream.jpg" alt="ice-cream" class="image2"> </a>
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>You may have just gorged yourself to eruption point, but somehow there's always room for a tooth-rotting pile of ice cream with nuts, marshmallows and chocolate sauce. Thank God for extra long spoons that allow you get at the real weight-gain stuff all mixed up and melted at the bottom of the glass.</p>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+<h3> Chicken muamba, Gabon </h3>
+<<a href="https://recipes.fandom.com/wiki/Chicken_Muamba">
+<img src="images/chicken-muamba.jpg" alt="Chicken muamba" class="image2"></a>
+<h5>click image to open the recipe</h5>
+<a href="recepie.html">Do you know a better recepie? Add here</a>
+<p>A bastardized Western version of this delectable Gabonese dish swamps everything in peanut butter. Oh, the insanity. The proper recipe calls for chicken, hot chili, garlic, tomato, pepper, salt, okra and palm butter, an artery-clogging African butter that will force you into a second helping and a promise to start using your gym membership.</p>
+  </div>
+ </div>
+</div>
+
+
+
+
+<tr>
+<td>
+<br><br><br>
+
+</tr><td>
+<h4 style="color: black; font-family: sans-serif;"> RELATED SEARCHES </h4>
+<ul style ="list-style-type: square;">
+<li> <a href ="dessert.html"><i style="font-size: 20px">TOP 10 DESSERTS AROUND THE WORLD </i></a> </li>
+<li>  <a href ="streetfood.html"><i style="font-size: 20px">TOP 10 STREET FOOD AROUND THE WORLD</i> </a></li>
+<li> <a href ="drinks.html"><i style="font-size: 20px">TOP 10 DRINKS AROUND THE WORLD </i></a> </li>
+<li> <a href ="restaurant.html"><i style="font-size: 20px">TOP 10 RESTAURANTS AROUND THE WORLD</i> </a> </li>
+<li> <a href ="foodbloggers.html"><i style="font-size: 20px">TOP 10 FOOD BLOGGERS AROUND THE WORLD</i> </a> </li>
+
+
+
+<style type="text/css">
+  a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #212121;
+}
+
+a:visited {
+  color: #212121;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #D9CAB3;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #D9CAB3;
+}
+
+a:active {
+  background: #265301;
+  color: #CDFEAA;
+}
+</style>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px 50px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.signup {
+  background-color: green;
+  color: green;
+  padding: 14px 20px;
+  margin: 8px 8px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  width: 50%;
+  opacity: 20;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 25%;
+}
+
+/* Add padding to container elements */
+.container {
+ padding: 18px 18px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 25%;
+  top: 10%;
+  bottom: 10%;
+  width: 50%; /* Full width */
+  height: 85%; /* Full height */
+  background-color: yellow;
+ 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 50%;
+  }
+}
+</style>
+<body>
+
+<form action="signup.php" method="post">
+<button class="open-button" onclick="document.getElementById('id01').style.display='block'" style="width:auto; ">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h3 align= "center"> Login/Signup </h3>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+       <br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<div class ="cookie-container">
+<p> We use cookies in this website to give you the best experience on our site and show you relevent ads. To find more, read our <a href ="#"> privacy policy </a> and <a href ="#"> cookie policy </a>.
+</p>
+<button class ="cookie-btn">
+Okay
+</button>
+<div class ="cookie-container">
+<p> We use cookies in this website to give you the best experience on our site and show you relevent ads. To find more, read our <a href ="#"> privacy policy </a> and <a href ="#"> cookie 
+policy </a>.
+</p>
+<button class ="cookie-btn">
+Okay
+</button>
+<style>
+.{
+margin: 0;
+}
+body{
+font-family: "Rcboto", sans-serif;
+}
+.wrapper{
+padding: 32px;
+}
+.cookie-container{
+position: fixed;
+bottom: -100;
+left: 0;
+right: 0;
+background: #2f3640;
+color: #f5f6fa;
+padding: 0 32px;
+box-shadow: 0-2px 16px rgba (47, 54, 64);
+transition: 400ms;
+}
+.cookie-container.active{
+bottom: 0;
+}
+.cookie-container a{
+color: #f5f6fa;
+}
+.cookie-btn{
+background: #c84118;
+border: 0;
+color: #f5f6fa;
+padding: 12px 48px;
+font-size: 18px;
+margin bottom: 16px;
+border-radius: 16px;
+cursor: pointer;
+}
+</style>
+<script>
+const cookieContainer = document.querySelector(".cookie-container");
+const cookieButton = document.querySelector(".cookie-btn");
+
+cookieButton.addEventListener("click", () => {
+cookieContainer.classList.remove("active");
+});
+setTimeout( () => {
+cookieContainer.classList.add("active");
+} , 2000);
+localStorage.setItem("cookieBannerDisplayed", true)
+</script>
+
+<div class="food2"style="float:right;"  >
+
+<span class="material-icons" style="font-size:140px;color:#e69500;">
+restaurant_menu
+</span> 
+
+<span class="material-icons"style="font-size:140px;color:#e69500;">
+restaurant
+</span>
+</div>
+
+
+</td>
+
+
+<!--<button class="open-button" onclick="openForm()">login</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>-->
+
+</body>
+</html>
+
+
+
+
+
+
